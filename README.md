@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+# boxis.github.io
 
-You can use the [editor on GitHub](https://github.com/Boxis/boxis.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+My personal blog, live at **<https://boxis.github.io>** — posts, book reviews/summaries, random thoughts, and TIL notes.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Built with [Jekyll](https://jekyllrb.com/) + the [Chirpy theme](https://github.com/cotes2020/jekyll-theme-chirpy) (via [chirpy-starter](https://github.com/cotes2020/chirpy-starter)), deployed automatically by GitHub Actions on every push to `master`.
 
-### Markdown
+## Writing a new post
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. Create a file in `_posts/` named `YYYY-MM-DD-short-title.md`
+2. Start it with front matter:
 
-```markdown
-Syntax highlighted code block
+   ```yaml
+   ---
+   title: My Post Title
+   date: 2026-07-19 12:00:00 -0400
+   categories: [Books]        # one of: Blogging, Books, Thoughts, TIL (or invent a new one)
+   tags: [book-review]        # lowercase, freeform
+   ---
+   ```
 
-# Header 1
-## Header 2
-### Header 3
+3. Write Markdown below the front matter
+4. Commit and push — the site rebuilds and deploys in ~2 minutes
 
-- Bulleted
-- List
+Posts can also be created/edited directly on github.com from any device.
 
-1. Numbered
-2. List
+## Structure
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Boxis/boxis.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- `_posts/` — all blog content
+- `_tabs/about.md` — the About page
+- `_config.yml` — site title, tagline, avatar, social links, analytics, comments
